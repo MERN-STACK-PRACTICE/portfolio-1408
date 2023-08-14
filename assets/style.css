@@ -1,0 +1,154 @@
+:root{
+    font-family: 'Josefin Sans', sans-serif;
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.main-head {
+    background-color: rgba(12, 27, 66, 0.237);  /* Background color */
+    color: white; /* Text color */
+    padding: 20px; /* Padding around the header content */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out content */
+    align-items: center; /* Center-align vertically */
+  }
+  
+  /* Style the h1 element */
+  .main-head h1 {
+    margin: 0; /* Remove margin */
+  }
+  
+  /* Style the navbar links */
+  .navbar {
+    display: flex; /* Use flexbox for alignment */
+  }
+  
+  .navbar a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underlines from links */
+    margin: 0 10px; /* Add spacing between links */
+    padding: 5px 10px; /* Add padding to links */
+    border-radius: 5px; /* Add rounded corners to links */
+  }
+  
+  /* Style the navbar links on hover */
+  .navbar a:hover {
+    background-color: #0000008f;
+    padding: 10px; /* Change background color on hover */
+  }
+  .main-img img{
+    height: 90%;
+    margin-top: 30px;
+    position: absolute;
+    right: 3em;
+    box-shadow: 5px;
+  }
+  img{
+    box-shadow: 20px 20px 20px;
+  }
+  .main-img img:hover{
+    transform: scaleX(0.95) ;
+    transform: scale3d(5px);
+  }
+
+
+.anim-text {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+.main-content{
+    background-color: #131417;  
+    height: 100vh;
+}
+.container {
+   
+  color: #e5e5e5;
+  font-size: 2.56rem;
+  text-transform: uppercase;
+  padding-top: 100px;
+  display: flex;
+  margin-left: 40px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.animation {
+  height:8vh;
+  overflow:hidden;
+  margin-left: 1rem;
+  
+  
+}
+.para-text{
+  color: white;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  word-spacing: 1px;
+  margin-top: 30px;
+  margin-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  line-height: 20pt;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+  
+}
+
+.first div {
+  background-color:#20a7d8;
+}
+.second div {
+  background-color:#CD921E;
+}
+.third div {
+  background-color:#c10528;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+.main-text{
+    color: rgb(255, 254, 252);
+    font-size: 8vh;
+    text-align: center;
+}
+.quote{
+  
+    background-color: #00000079;
+    height: max-content;
+    padding: 10px;
+    font-style: italic;
+    font-family:oblique
+}
+.about > .main-text{
+    font-style: italic;
+}
+.imgbox{
+  display: grid
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+.imgbox img{
+  width: 15rem;
+}
